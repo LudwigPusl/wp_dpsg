@@ -1,63 +1,55 @@
-<!doctype html>
+<?php
+/**
+ *
+ * Default Page Header
+ *
+ * @package WP-Bootstrap
+ * @subpackage Default_Theme
+ * @since WP-Bootstrap 0.1
+ *
+ */ ?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+  <head>
 
-<!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<head>
-		<meta charset="utf-8">
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
 
-		<!-- Google Chrome Frame for IE -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-		<title><?php wp_title(''); ?></title>
+    <link rel="shortcut icon" href="<?php get_template_directory_uri();?>/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri();?>/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri();?>/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri();?>/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri();?>/assets/ico/apple-touch-icon-57-precomposed.png">
 
-		<!-- mobile meta (hooray!) -->
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <?php wp_head(); ?>
 
-		<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
-		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-		<!--[if IE]>
-			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-		<![endif]-->
-		<!-- or, set /favicon.ico for IE10 win -->
-		<meta name="msapplication-TileColor" content="#f01d4f">
-		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-		<!-- wordpress head functions -->
-		<?php wp_head(); ?>
-		<!-- end of wordpress head -->
-
-		<!-- drop Google Analytics Here -->
-		<!-- end analytics -->
-
-	</head>
-
-	<body <?php body_class(); ?>>
-
-		<div id="container">
-
-			<header class="header" role="banner">
-
-				<div id="inner-header" class="wrap clearfix">
-
-					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
-					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
-
-
-					<nav role="navigation">
-						<?php bones_main_nav(); ?>
-					</nav>
-
-				</div> <!-- end #inner-header -->
-
-			</header> <!-- end header -->
+  </head>
+  <body <?php body_class(); ?>  data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="10">
+    <div class="navbar navbar-inverse navbar-relative-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+          <?php
+           /** Loading WordPress Custom Menu  **/
+           wp_nav_menu( array(
+              'menu'            => 'main-menu',
+              'container_class' => 'nav-collapse collapse',
+              'menu_class'      => 'nav',
+              'fallback_cb'     => '',
+              'menu_id' => 'main-menu',
+              'walker' => new Bootstrapwp_Walker_Nav_Menu()
+          ) ); ?>
+        </div>
+      </div>
+    </div>
+    <!-- End Header. Begin Template Content -->

@@ -1,22 +1,25 @@
-			<footer class="footer" role="contentinfo">
+<?php
+/**
+ * Default Footer
+ *
+ * @package WP-Bootstrap
+ * @subpackage Default_Theme
+ * @since WP-Bootstrap 0.1
+ *
+ * Last Revised: July 16, 2012
+ */
+?>
+    <!-- End Template Content -->
+      <footer>
+<div class="container">
+      <p class="pull-right"><a href="#"><?php _e( 'Back to top', 'bootstrapwp' ); ?></a></p>
+        <p>&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?></p>
+          <?php
+    if ( function_exists('dynamic_sidebar')) dynamic_sidebar("footer-content");
+?>
+    </div> <!-- /container -->
+       </footer>
+<?php wp_footer(); ?>
 
-				<div id="inner-footer" class="wrap clearfix">
-
-					<nav role="navigation">
-							<?php bones_footer_links(); ?>
-									</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
-
-				</div> <!-- end #inner-footer -->
-
-			</footer> <!-- end footer -->
-
-		</div> <!-- end #container -->
-
-		<!-- all js scripts are loaded in library/bones.php -->
-		<?php wp_footer(); ?>
-
-	</body>
-
-</html> <!-- end page. what a ride! -->
+  </body>
+</html>

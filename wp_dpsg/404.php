@@ -1,43 +1,49 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying 404 pages (Not Found).
+ *
+ * @package WordPress
+ * @subpackage WP-Bootstrap
+ * @since WP-Bootstrap 0.7
+ */
+get_header(); ?>
+  <div class="row">
+  <div class="container">
+   <?php if (function_exists('bootstrapwp_breadcrumbs')) bootstrapwp_breadcrumbs(); ?>
+   </div><!--/.container -->
+   </div><!--/.row -->
+   <div class="container">
 
-			<div id="content">
+      <header class="jumbotron subhead" id="overview">
+        <h1><?php _e( 'This is Embarrassing', 'bootstrapwp' ); ?></h1>
+        <p class="lead"><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.', 'bootstrapwp' ); ?></p>
+      </header>
 
-				<div id="inner-content" class="wrap clearfix">
+        <div class="row content">
+<div class="span8">
 
-					<div id="main" class="eightcol first clearfix" role="main">
 
-						<article id="post-not-found" class="hentry clearfix">
+<div class="well">
+					<?php get_search_form(); ?>
 
-							<header class="article-header">
+</div><!--/.well -->
+<div class="row">
+<div class="span4">
+					<h2>All Pages</h2>
+					<?php wp_page_menu(); ?>
+</div><!--/.span4 -->
+<div class="span4">
+					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-								<h1><?php _e("Epic 404 - Article Not Found", "bonestheme"); ?></h1>
 
-							</header> <!-- end article header -->
+						<h2><?php _e( 'Most Used Categories', 'bootstrapwp' ); ?></h2>
+						<ul>
+						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 10 ) ); ?>
+						</ul>
 
-							<section class="entry-content">
-
-								<p><?php _e("The article you were looking for was not found, but maybe try looking again!", "bonestheme"); ?></p>
-
-							</section> <!-- end article section -->
-
-							<section class="search">
-
-									<p><?php get_search_form(); ?></p>
-
-							</section> <!-- end search section -->
-
-							<footer class="article-footer">
-
-									<p><?php _e("This is the 404.php template.", "bonestheme"); ?></p>
-
-							</footer> <!-- end article footer -->
-
-						</article> <!-- end article -->
-
-					</div> <!-- end #main -->
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
+</div><!--/.span4 -->
+</div><!--/.row -->
+					</div><!--/.span8 -->
+ <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
