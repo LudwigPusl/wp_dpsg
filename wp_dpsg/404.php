@@ -1,49 +1,42 @@
-<?php
-/**
- * The template for displaying 404 pages (Not Found).
- *
- * @package WordPress
- * @subpackage WP-Bootstrap
- * @since WP-Bootstrap 0.7
- */
-get_header(); ?>
-  <div class="row">
-  <div class="container">
-   <?php if (function_exists('bootstrapwp_breadcrumbs')) bootstrapwp_breadcrumbs(); ?>
-   </div><!--/.container -->
-   </div><!--/.row -->
-   <div class="container">
+<?php get_header(); ?>
+			
+			<div id="content" class="clearfix row-fluid">
+			
+				<div id="main" class="span12 clearfix" role="main">
 
-      <header class="jumbotron subhead" id="overview">
-        <h1><?php _e( 'This is Embarrassing', 'bootstrapwp' ); ?></h1>
-        <p class="lead"><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.', 'bootstrapwp' ); ?></p>
-      </header>
+					<article id="post-not-found" class="clearfix">
+						
+						<header>
 
-        <div class="row content">
-<div class="span8">
+							<div class="hero-unit">
+							
+								<h1><?php _e("Epic 404 - Article Not Found","bonestheme"); ?></h1>
+								<p><?php _e("This is embarassing. We can't find what you were looking for.","bonestheme"); ?></p>
+															
+							</div>
+													
+						</header> <!-- end article header -->
+					
+						<section class="post_content">
+							
+							<p><?php _e("Whatever you were looking for was not found, but maybe try looking again or search using the form below.","bonestheme"); ?></p>
 
-
-<div class="well">
-					<?php get_search_form(); ?>
-
-</div><!--/.well -->
-<div class="row">
-<div class="span4">
-					<h2>All Pages</h2>
-					<?php wp_page_menu(); ?>
-</div><!--/.span4 -->
-<div class="span4">
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-
-						<h2><?php _e( 'Most Used Categories', 'bootstrapwp' ); ?></h2>
-						<ul>
-						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 10 ) ); ?>
-						</ul>
-
-</div><!--/.span4 -->
-</div><!--/.row -->
-					</div><!--/.span8 -->
- <?php get_sidebar(); ?>
+							<div class="row-fluid">
+								<div class="span12">
+									<?php get_search_form(); ?>
+								</div>
+							</div>
+					
+						</section> <!-- end article section -->
+						
+						<footer>
+							
+						</footer> <!-- end article footer -->
+					
+					</article> <!-- end article -->
+			
+				</div> <!-- end #main -->
+    
+			</div> <!-- end #content -->
 
 <?php get_footer(); ?>
