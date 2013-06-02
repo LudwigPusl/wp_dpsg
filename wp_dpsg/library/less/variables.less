@@ -30,9 +30,26 @@
 @purple:                #7a43b6;
 
 
+// DPSG colors
+// -------------------------
+@dpsg_bg_blue:          #00264c;
+@dpsg_bg_blue2:         #003264;
+@dpsg_bg_gray:          #dde0e5;
+@dpsg_bg_gray2:         #F2F3F4;
+@dpsg_bg_gray_bg:       #F2F3F4;
+@dpsg_nav_blue:         #002142;
+@dpsg_nav_blue2:        #00376e;
+@dpsg_nav_blue_bg:      #002143;
+@dpsg_nav_blue_border:  #0054a8;
+@dpsg_nav_red:          #7f1724;
+@dpsg_nav_red2:         #480d14;
+@dpsg_nav_red_bg:       #480D14;
+@dpsg_nav_red_border:   #bb2235;
+
+
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
+@bodyBackground:        @dpsg_bg_gray2;
 @textColor:             @grayDark;
 
 
@@ -181,18 +198,22 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBackgroundHighlight:       @dpsg_nav_blue2;
+@navbarBackground:                @dpsg_nav_blue;
+@navbarBorder:                    @dpsg_nav_blue_border;
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
-@navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+@navbarText:                      @white;
+@navbarLinkColor:                 @white;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @white;
+@navbarLinkBackgroundHover:       @dpsg_nav_red;
+@navbarLinkBackgroundHover2:      @dpsg_nav_red2;
+@navbarLinkBackgroundActive:      @dpsg_nav_red;
+@navbarLinkBackgroundActive2:     @dpsg_nav_red2;
 
 @navbarBrandColor:                @navbarLinkColor;
+
+@navbarFontFamily:                @sansFontFamily;
 
 // Inverted navbar
 @navbarInverseBackground:                #111111;
