@@ -67,9 +67,9 @@ body.admin-bar .navbar-fixed-top{
 	padding-right: 0;
 }
 
-#inner-header{
+/*#inner-header{
 	width: 100%;
-}
+}*/
 
 input, textarea, select, .uneditable-input {
 	margin-bottom: 0;
@@ -656,9 +656,6 @@ blockquote.pull-left{
 }
 
 @media only screen and (min-width: 980px) {
-	body{
-		padding-top: 60px;
-	}
 	
 	.container-fluid{
 		max-width: 970px;

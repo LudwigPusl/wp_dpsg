@@ -39,14 +39,17 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
+		
+		<div id="ueber-header">
+			<div class="decoration-header"></div>
+		</div>
 				
 		<header role="banner">
-		
-		<span class="decoration-header"></span>
 			
 			<div id="inner-header" class="clearfix">
+			<!--<div id="inner-header" class="clearfix" data-spy="affix" data-offset-top="80">-->
 				
-				<div class="navbar navbar-fixed-top">
+				<div class="navbar navbar-static-top">
 					<div class="navbar-inner">
 						<div class="container-fluid nav-container">
 							<nav role="navigation">

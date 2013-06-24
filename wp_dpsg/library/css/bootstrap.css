@@ -209,7 +209,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #f2f3f4;
+  background: url("../../images/bg_body_sec_edited.jpg") repeat-x scroll 50% 10px #f2f3f4;
 }
 a {
   color: #0088cc;
@@ -3704,6 +3704,9 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
+  max-width: 970px;
+  padding: 0 20px;
+  margin: 0 auto;
   *position: relative;
   *z-index: 2;
 }
@@ -3845,7 +3848,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-static-top {
   position: static;
-  margin-bottom: 0;
+  margin-top: 145px;
 }
 .navbar-static-top .navbar-inner {
   -webkit-border-radius: 0;
