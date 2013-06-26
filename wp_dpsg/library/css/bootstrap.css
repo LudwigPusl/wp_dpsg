@@ -545,7 +545,24 @@ a:focus {
 .container-fluid:after {
   clear: both;
 }
-body > .container {
+#content {
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 900px;
+  *zoom: 1;
+}
+#content:before,
+#content:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#content:after {
+  clear: both;
+}
+#content {
+  padding-top: 20px;
   background: #ffffff;
 }
 .decoration-header {
@@ -559,6 +576,19 @@ body > .container {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00264c', endColorstr='#ff003264', GradientType=0);
   margin-bottom: 20px;
+}
+#ueber-header h1 {
+  color: #00376e;
+}
+body > footer {
+  background-color: #002d5a;
+  background-image: -moz-linear-gradient(top, #003264, #00264c);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#003264), to(#00264c));
+  background-image: -webkit-linear-gradient(top, #003264, #00264c);
+  background-image: -o-linear-gradient(top, #003264, #00264c);
+  background-image: linear-gradient(to bottom, #003264, #00264c);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff003264', endColorstr='#ff00264c', GradientType=0);
 }
 p {
   margin: 0 0 10px;
@@ -2492,14 +2522,14 @@ table th[class*="span"],
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #761522;
+  background-image: -moz-linear-gradient(top, #7f1724, #69131e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7f1724), to(#69131e));
+  background-image: -webkit-linear-gradient(top, #7f1724, #69131e);
+  background-image: -o-linear-gradient(top, #7f1724, #69131e);
+  background-image: linear-gradient(to bottom, #7f1724, #69131e);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7f1724', endColorstr='#ff69131e', GradientType=0);
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -2507,14 +2537,14 @@ table th[class*="span"],
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #761522;
+  background-image: -moz-linear-gradient(top, #7f1724, #69131e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7f1724), to(#69131e));
+  background-image: -webkit-linear-gradient(top, #7f1724, #69131e);
+  background-image: -o-linear-gradient(top, #7f1724, #69131e);
+  background-image: linear-gradient(to bottom, #7f1724, #69131e);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7f1724', endColorstr='#ff69131e', GradientType=0);
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -3724,7 +3754,7 @@ input[type="submit"].btn.btn-mini {
   background-image: linear-gradient(to bottom, #00376e, #002142);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00376e', endColorstr='#ff002142', GradientType=0);
-  border: 1px solid #0054a8;
+  border: 1px solid #00376e;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -5128,8 +5158,10 @@ a.badge:focus {
 }
 .carousel {
   position: relative;
-  margin-bottom: 20px;
+  margin-top: -20px;
   line-height: 1;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 .carousel-inner {
   overflow: hidden;

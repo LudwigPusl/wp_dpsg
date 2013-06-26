@@ -73,10 +73,6 @@ input, textarea, select, .uneditable-input {
 	width: 100px;
 }
 
-#content{
-	padding: 10px 0 0;
-}
-
 .more-link{
 	white-space: nowrap;
 }
@@ -652,11 +648,6 @@ blockquote.pull-left{
 	
 	#inner-footer{
 		padding: 0;
-	}
-	
-	#content{
-		padding-left: 0;
-		padding-right: 0;
 	}
 	
 	.topbar-inner{

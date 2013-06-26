@@ -14,10 +14,24 @@
   .navbar-fixed-top,
   .navbar-fixed-bottom,
   .navbar-static-top,
-  #ueber-header {
+  .decoration-header,
+  body > .container {
     margin-left: -20px;
     margin-right: -20px;
   }
+
+  // Negative indent the now static content
+  #content {
+    margin-left: -20px;
+    margin-right: -20px;
+	width: 100%;
+  }
+
+  //remove the logo on the top
+  #header-logo {
+	display:none;
+  }
+
   // Remove padding on container given explicit padding set on body
   .container-fluid {
     padding: 0;

@@ -15,7 +15,17 @@
   .clearfix();
 }
 
-// set Background of Contentbox
-body > .container {
+
+// set content box padding
+#content {
+  margin:0 auto;
+  padding-right: @gridGutterWidth;
+  padding-left: @gridGutterWidth;
+  width: @gridRowWidth - @gridGutterWidth*2;
+  .clearfix();
+}
+
+#content {
+  padding-top: @baseLineHeight;
   background: @white;
 }

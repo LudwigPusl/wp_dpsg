@@ -43,23 +43,12 @@
 		
 		<div id="ueber-header">
 			<div class="decoration-header"></div>
-			<div class="container">
-				<div class="row">
-					<div class="span4">
+			<div class="container clearfix">
 						<img id="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo_schliersee.png" />
-					</div>
-					<div class="span8">
-						<?php
-							$blog_hero = of_get_option('blog_hero');
-							if ($blog_hero){
-						?>
-								<h1><?php bloginfo('title'); ?></h1>
-								<p><?php bloginfo('description'); ?></p>
-						<?php
-							}
-						?>
-					</div>
-				</div>
+						<div class="pull-right">
+							<h1><strong><?php bloginfo('title'); ?></strong></h1>
+							<p><em><?php bloginfo('description'); ?></em></p>
+						</div>
 			</div>
 		</div>
 				
@@ -97,5 +86,3 @@
 			</div> <!-- end #inner-header -->
 		
 		</header> <!-- end header -->
-		
-		<div id="content-container" class="container">

@@ -5,6 +5,19 @@
 
 @media (min-width: 1200px) {
 
+	// set Contentbox
+	#content {
+	  padding-right: @gridGutterWidth1200;
+	  padding-left: @gridGutterWidth1200;
+	  width: @gridRowWidth1200 - @gridGutterWidth1200*2;
+	  .clearfix();
+	}
+	
+	.carousel {
+	  margin-left: -@gridGutterWidth1200;
+	  margin-right: -@gridGutterWidth1200;
+	}
+
   // Fixed grid
   #grid > .core(@gridColumnWidth1200, @gridGutterWidth1200);
 
