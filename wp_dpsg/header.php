@@ -25,6 +25,7 @@
 		<![endif]-->
 		
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" type="image/icon"/>
 
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
@@ -42,6 +43,24 @@
 		
 		<div id="ueber-header">
 			<div class="decoration-header"></div>
+			<div class="container">
+				<div class="row">
+					<div class="span4">
+						<img id="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo_schliersee.png" />
+					</div>
+					<div class="span8">
+						<?php
+							$blog_hero = of_get_option('blog_hero');
+							if ($blog_hero){
+						?>
+								<h1><?php bloginfo('title'); ?></h1>
+								<p><?php bloginfo('description'); ?></p>
+						<?php
+							}
+						?>
+					</div>
+				</div>
+			</div>
 		</div>
 				
 		<header role="banner">
@@ -49,9 +68,9 @@
 			<div id="inner-header" class="clearfix">
 			<!--<div id="inner-header" class="clearfix" data-spy="affix" data-offset-top="80">-->
 				
-				<div class="navbar navbar-static-top">
+				<div class="navbar navbar-static-top container">
 					<div class="navbar-inner">
-						<div class="container-fluid nav-container">
+						<div class="nav-container">
 							<nav role="navigation">
 								<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 							        <span class="icon-bar"></span>
@@ -79,4 +98,4 @@
 		
 		</header> <!-- end header -->
 		
-		<div class="container-fluid">
+		<div id="content-container" class="container">

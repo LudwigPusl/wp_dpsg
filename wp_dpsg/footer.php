@@ -15,9 +15,12 @@
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
 					
-					<p class="pull-right"><a href="http://320press.com" id="credit320" title="By the dudes of 320press">320press</a></p>
+					<p class="pull-right">
+						<a href="https://github.com/LudwigPusl/wp_dpsg" title="wp_dpsg on Github">wp_dpsg</a> by 
+						<a href="http://dpsg-schliersee.de" title="DPSG St. Sixtus Schliersee">DPSG St. Sixtus Schliersee</a> based on 
+						<a href="http://320press.com" id="credit320" title="By the dudes of 320press">320press</a></p>
 			
-					<p class="attribution">&copy; <?php bloginfo('name'); ?></p>
+					<p class="attribution">&copy; <?php the_time('Y') ?> <?php bloginfo('name'); ?></p>
 				
 				</div> <!-- end #inner-footer -->
 				

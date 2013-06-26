@@ -545,6 +545,9 @@ a:focus {
 .container-fluid:after {
   clear: both;
 }
+body > .container {
+  background: #ffffff;
+}
 .decoration-header {
   height: 10px;
   background-color: #002b56;
@@ -555,6 +558,7 @@ a:focus {
   background-image: linear-gradient(to bottom, #00264c, #003264);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00264c', endColorstr='#ff003264', GradientType=0);
+  margin-bottom: 20px;
 }
 p {
   margin: 0 0 10px;
@@ -3704,8 +3708,6 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
-  max-width: 970px;
-  padding: 0 20px;
   margin: 0 auto;
   *position: relative;
   *z-index: 2;
@@ -3848,7 +3850,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-static-top {
   position: static;
-  margin-top: 145px;
+  margin-top: 20px;
 }
 .navbar-static-top .navbar-inner {
   -webkit-border-radius: 0;

@@ -56,20 +56,6 @@ body.admin-bar .navbar-fixed-top{
 	top: 28px; 
 }
 
-.navbar .brand{
-	color: #000;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
-	font-weight: bold !important;
-}
-
-.nav-container{
-	padding-left: 0;
-	padding-right: 0;
-}
-
-/*#inner-header{
-	width: 100%;
-}*/
 
 input, textarea, select, .uneditable-input {
 	margin-bottom: 0;
@@ -657,12 +643,12 @@ blockquote.pull-left{
 
 @media only screen and (min-width: 980px) {
 	
-	.container-fluid{
+	/*.container-fluid{
 		max-width: 970px;
 		margin: 0 auto;
 		padding-left: 20px;
 		padding-right: 20px;
-	}
+	}*/
 	
 	#inner-footer{
 		padding: 0;

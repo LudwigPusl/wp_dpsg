@@ -77,6 +77,7 @@ add_filter( 'wp_title', 'bones_filter_title', 10, 2 );
 add_image_size( 'wpbs-featured', 638, 300, true );
 add_image_size( 'wpbs-featured-home', 970, 311, true);
 add_image_size( 'wpbs-featured-carousel', 970, 400, true);
+add_image_size( 'wp-dpsg-post-thumbnail-large', 1170, 200, true);
 
 /* 
 to add more sizes, simply copy a line from above 
