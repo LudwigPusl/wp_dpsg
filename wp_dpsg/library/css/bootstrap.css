@@ -212,12 +212,12 @@ body {
   background: url("../../images/bg_body_sec_edited.jpg") repeat-x scroll 50% 10px #f2f3f4;
 }
 a {
-  color: #0088cc;
+  color: #00376e;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #005580;
+  color: #001122;
   text-decoration: underline;
 }
 .img-rounded {
@@ -577,8 +577,8 @@ a:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00264c', endColorstr='#ff003264', GradientType=0);
   margin-bottom: 20px;
 }
-#ueber-header h1 {
-  color: #00376e;
+#ueber-header a {
+  text-decoration: none;
 }
 body > footer {
   background-color: #002d5a;
@@ -2869,17 +2869,17 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006dcc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-color: #00286e;
+  background-image: -moz-linear-gradient(top, #00376e, #00126e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00376e), to(#00126e));
+  background-image: -webkit-linear-gradient(top, #00376e, #00126e);
+  background-image: -o-linear-gradient(top, #00376e, #00126e);
+  background-image: linear-gradient(to bottom, #00376e, #00126e);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
-  border-color: #0044cc #0044cc #002a80;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00376e', endColorstr='#ff00126e', GradientType=0);
+  border-color: #00126e #00126e #000622;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #0044cc;
+  *background-color: #00126e;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2891,12 +2891,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #00126e;
+  *background-color: #000e55;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #000a3b \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -3095,14 +3095,14 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #0088cc;
+  color: #00376e;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #005580;
+  color: #001122;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3243,7 +3243,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0044cc;
+  background-color: #00126e;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -3438,7 +3438,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:focus {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: #00376e;
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {
@@ -3521,7 +3521,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
   color: #ffffff;
-  background-color: #0088cc;
+  background-color: #00376e;
 }
 .nav-stacked > li {
   float: none;
@@ -3576,14 +3576,14 @@ input[type="submit"].btn.btn-mini {
   border-radius: 6px;
 }
 .nav .dropdown-toggle .caret {
-  border-top-color: #0088cc;
-  border-bottom-color: #0088cc;
+  border-top-color: #00376e;
+  border-bottom-color: #00376e;
   margin-top: 6px;
 }
 .nav .dropdown-toggle:hover .caret,
 .nav .dropdown-toggle:focus .caret {
-  border-top-color: #005580;
-  border-bottom-color: #005580;
+  border-top-color: #001122;
+  border-bottom-color: #001122;
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -4812,7 +4812,7 @@ input[type="submit"].btn.btn-mini {
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #0088cc;
+  border-color: #00376e;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
